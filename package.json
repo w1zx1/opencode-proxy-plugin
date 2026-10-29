@@ -1,0 +1,16 @@
+{
+  "name": "opencode-proxy-plugin",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Route every OpenCode server request through the operating system proxy",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src"
+  ],
+  "scripts": {
+    "test": "node --test test/detect.test.ts test/apply.test.ts test/hook.test.ts"
+  }
+}
